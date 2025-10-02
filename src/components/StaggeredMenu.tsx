@@ -2,6 +2,9 @@
 
 import React, { useCallback, useLayoutEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
+import logoDev from "../public/logoDev.png"
+import { StaticImageData } from "next/image";
+import Image from "next/image";
 
 export interface StaggeredMenuItem {
   label: string;
@@ -20,7 +23,7 @@ export interface StaggeredMenuProps {
   displaySocials?: boolean;
   displayItemNumbering?: boolean;
   className?: string;
-  logoUrl?: string;
+  logoUrl?: StaticImageData;
   menuButtonColor?: string;
   openMenuButtonColor?: string;
   accentColor?: string;
@@ -37,7 +40,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
   displaySocials = true,
   displayItemNumbering = true,
   className,
-  logoUrl = "R",
+  logoUrl = logoDev,
   menuButtonColor = "#fff",
   openMenuButtonColor = "#fff",
   changeMenuColorOnOpen = true,
@@ -449,10 +452,10 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
           aria-label="Main navigation header"
         >
           <div
-            className="sm-logo flex items-center select-none pointer-events-auto border-white border-2 rounded-full p-2"
+            className="sm-logo flex items-center select-none pointer-events-auto "
             aria-label="Logo"
           >
-            <h1 className="text-3xl font-bold">R</h1>
+            <Image src={logoDev} alt="Logo" width={120} height={120} className="w-auto h-auto object-contain cursor-pointer" />
           </div>
 
           <button
