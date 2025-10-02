@@ -406,7 +406,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
   ]);
 
   return (
-    <div className="sm-scope w-full h-full">
+    <div className="sm-scope fixed top-0 left-0 z-50 h-screen w-full pointer-events-none">
       <div
         className={
           (className ? className + " " : "") +
@@ -505,12 +505,12 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
         </header>
 
         <aside
-          id="staggered-menu-panel"
-          ref={panelRef}
-          className="staggered-menu-panel absolute top-0 right-0 h-full bg-white flex flex-col p-[6em_2em_2em_2em] overflow-y-auto z-10 backdrop-blur-[12px]"
-          style={{ WebkitBackdropFilter: "blur(12px)" }}
-          aria-hidden={!open}
-        >
+  id="staggered-menu-panel"
+  ref={panelRef}
+  className="staggered-menu-panel pointer-events-auto absolute top-0 right-0 h-full bg-white flex flex-col p-[6em_2em_2em_2em] overflow-y-auto z-10 backdrop-blur-[12px]"
+  style={{ WebkitBackdropFilter: "blur(12px)" }}
+  aria-hidden={!open}
+>
           <div className="sm-panel-inner flex-1 flex flex-col gap-5">
             <ul
               className="sm-panel-list list-none m-0 p-0 flex flex-col gap-2"
