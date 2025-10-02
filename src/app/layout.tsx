@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import StaggeredMenu from "@/components/StaggeredMenu";
-import logodev from "@/app/images/logoRodriguesdev.png";
+import logoDev from "@/public/logoDev.png";
 
 const interSans = Inter({
   variable: "--font-inter-sans",
@@ -46,7 +46,7 @@ export default function RootLayout({
           openMenuButtonColor="#1a1a1a"
           changeMenuColorOnOpen={true}
           colors={["#B19EEF", "#5227FF"]}
-          logoUrl={logodev.src}
+          logoUrl={logoDev}
           accentColor="#5227FF"
         />
 
