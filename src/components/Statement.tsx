@@ -1,7 +1,6 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
-import Link from "next/link";
 
 export function Statement() {
   const itemVariants: Variants = {
@@ -16,34 +15,33 @@ export function Statement() {
   return (
     <section className="w-full bg-black py-24 px-8 md:py-32">
       <motion.div
-        className="container mx-auto"
+        className="container mx-auto flex flex-col items-center gap-12 text-center"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
         transition={{ staggerChildren: 0.2 }}
       >
-        <div className="flex flex-row justify-center items-center">
-          <motion.h2
-            variants={itemVariants}
-            className="text-4xl font-medium tracking-tight text-white md:text-5xl"
-          >
-            "A criatividade é a inteligência se divertindo" - Albert Einstein
-          </motion.h2>
+        <motion.div
+          variants={itemVariants}
+          className="flex flex-col items-center gap-4"
+        >
+          <h2 className="max-w-4xl text-4xl font-medium tracking-tight text-white md:text-5xl">
+            "A criatividade é a inteligência se divertindo"
+          </h2>
+          <p className="text-lg text-neutral-500">- Albert Einstein</p>
+        </motion.div>
 
-          <div className="flex flex-col justify-between">
-            <motion.p
-              variants={itemVariants}
-              className="max-w-xs self-start text-base text-neutral-400 md:self-end md:text-right"
-            >
-              A verdadeira inovação está em transformar ideias. Criando
-              experiências digitais que transmitam a essência de cada marca.
-            </motion.p>
-          </div>
-        </div>
+        <motion.p
+          variants={itemVariants}
+          className="max-w-2xl text-lg text-neutral-400"
+        >
+          A verdadeira inovação está em transformar ideias, criando experiências
+          digitais que transmitam a essência de cada marca.
+        </motion.p>
 
         <motion.div
           variants={itemVariants}
-          className="flex justify-center mt-24 border-t border-neutral-800 pt-8"
+          className="mt-12 w-full border-t border-neutral-800 pt-8"
         >
           <span className="text-sm uppercase tracking-[0.2em] text-neutral-500">
             Projetos Recentes
