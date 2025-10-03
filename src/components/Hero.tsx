@@ -93,7 +93,8 @@ export function Hero() {
             className="flex items-center gap-6 pt-4"
           >
             <Link
-              href="#https://github.com/rodriguesdev-ui"
+              href="https://github.com/rodriguesdev-ui"
+              target="_blank"
               aria-label="GitHub"
               className="relative group text-neutral-500 transition-colors hover:text-white"
             >
@@ -101,7 +102,8 @@ export function Hero() {
               <span className="absolute -bottom-2 left-1/2 h-1.5 w-1.5 -translate-x-1/2 scale-0 rounded-full bg-white transition-transform group-hover:scale-100" />
             </Link>
             <Link
-              href="#https://www.linkedin.com/in/guilherme-rodrigues-6bb04b244/"
+              href="https://www.linkedin.com/in/guilherme-rodrigues-6bb04b244/"
+              target="_blank"
               aria-label="LinkedIn"
               className="relative group text-neutral-500 transition-colors hover:text-white"
             >
@@ -109,7 +111,8 @@ export function Hero() {
               <span className="absolute -bottom-2 left-1/2 h-1.5 w-1.5 -translate-x-1/2 scale-0 rounded-full bg-white transition-transform group-hover:scale-100" />
             </Link>
             <Link
-              href="#https://www.instagram.com/rodriguesg.dev/"
+              href="https://www.instagram.com/rodriguesg.dev/"
+              target="_blank"
               aria-label="Instagram"
               className="relative group text-neutral-500 transition-colors hover:text-white"
             >

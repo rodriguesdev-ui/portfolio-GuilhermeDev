@@ -83,19 +83,22 @@ export function Footer() {
             </h4>
             <div className="mt-1 flex items-center gap-4">
               <Link
-                href="#https://github.com/rodriguesdev-ui"
+                href="https://github.com/rodriguesdev-ui"
+                target="_blank"
                 className="text-sm text-neutral-400 transition-colors hover:text-white"
               >
                 GitHub
               </Link>
               <Link
-                href="#https://www.linkedin.com/in/guilherme-rodrigues-6bb04b244/"
+                href="https://www.linkedin.com/in/guilherme-rodrigues-6bb04b244/"
+                target="_blank"
                 className="text-sm text-neutral-400 transition-colors hover:text-white"
               >
                 LinkedIn
               </Link>
               <Link
-                href="#https://www.instagram.com/rodriguesg.dev/"
+                href="https://www.instagram.com/rodriguesg.dev/"
+                target="_blank"
                 className="text-sm text-neutral-400 transition-colors hover:text-white"
               >
                 Instagram
