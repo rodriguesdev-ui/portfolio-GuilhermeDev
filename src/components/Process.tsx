@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
 import { processData, ProcessStep } from "@/components/data/process";
+import { AnimatedArrow } from "@/components/AnimatedArow";
 
 const ProcessCard = ({ step, title, description, image }: ProcessStep) => {
   return (
@@ -26,7 +26,7 @@ const ProcessCard = ({ step, title, description, image }: ProcessStep) => {
 
         <div className="flex items-center gap-2 text-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100">
           <span>Ver detalhes</span>
-          <ArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
+          <AnimatedArrow />
         </div>
       </div>
     </div>
