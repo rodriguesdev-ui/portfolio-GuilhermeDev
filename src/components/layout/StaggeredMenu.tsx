@@ -2,7 +2,7 @@
 
 import React, { useCallback, useLayoutEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
-import logoDev from "../public/logoDev.png"
+import logoDev from "../public/logoDev.png";
 import { StaticImageData } from "next/image";
 import Image from "next/image";
 
@@ -455,7 +455,13 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
             className="sm-logo flex items-center select-none pointer-events-auto "
             aria-label="Logo"
           >
-            <Image src={logoDev} alt="Logo" width={120} height={120} className="w-auto h-auto object-contain cursor-pointer" />
+            <Image
+              src={logoDev}
+              alt="Logo"
+              width={120}
+              height={120}
+              className="w-auto h-auto object-contain cursor-pointer"
+            />
           </div>
 
           <button
@@ -505,12 +511,12 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
         </header>
 
         <aside
-  id="staggered-menu-panel"
-  ref={panelRef}
-  className="staggered-menu-panel pointer-events-auto absolute top-0 right-0 h-full bg-white flex flex-col p-[6em_2em_2em_2em] overflow-y-auto z-10 backdrop-blur-[12px]"
-  style={{ WebkitBackdropFilter: "blur(12px)" }}
-  aria-hidden={!open}
->
+          id="staggered-menu-panel"
+          ref={panelRef}
+          className="staggered-menu-panel pointer-events-auto absolute top-0 right-0 h-full bg-white flex flex-col p-[6em_2em_2em_2em] overflow-y-auto z-10 backdrop-blur-[12px]"
+          style={{ WebkitBackdropFilter: "blur(12px)" }}
+          aria-hidden={!open}
+        >
           <div className="sm-panel-inner flex-1 flex flex-col gap-5">
             <ul
               className="sm-panel-list list-none m-0 p-0 flex flex-col gap-2"

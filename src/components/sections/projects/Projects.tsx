@@ -1,4 +1,4 @@
-
+"use client";
 import FlowingMenu from "./FlowingMenu";
 import { projectsData } from "@/components/data/projects";
 

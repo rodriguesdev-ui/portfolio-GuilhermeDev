@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Github, Instagram, Linkedin, User } from "lucide-react";
 
-import { Button } from "./ui/button";
+import { Button } from "../../ui/button";
 import profilePic from "@/public/Guilherme.jpeg";
 
 const containerVariants: Variants = {

@@ -48,3 +48,11 @@
     --ring: 252 100% 57%;
   }
 }
+
+@layer base, components;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

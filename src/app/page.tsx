@@ -1,8 +1,8 @@
-import { Hero } from "@/components/Hero";
-import { Projects } from "@/components/Projects";
-import { Statement } from "@/components/Statement";
-import { Process } from "@/components/Process";
-import { Footer } from "@/components/Footer";
+import { Hero } from "@/components/sections/home/Hero";
+import { Projects } from "@/components/sections/projects/Projects";
+import { Statement } from "@/components/sections/statement/Statement";
+import { Process } from "@/components/sections/process/Process";
+import { Footer } from "@/components/layout/Footer";
 export default function Home() {
   return (
     <>
